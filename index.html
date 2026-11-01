@@ -3,101 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f7f4">
-  <meta name="description" content="Xiao Tu is a Ph.D. student at Zhejiang University researching diffusion language models and generative modeling.">
-  <title>Xiao Tu · Research</title>
+  <meta name="description" content="Xiao Tu is a Ph.D. student at Zhejiang University studying diffusion language models and generative modeling.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Xiao Tu</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="header-inner wrap">
-      <a class="wordmark" href="#top" aria-label="Xiao Tu, back to top"><span class="mark">XT<span class="mark-dot">.</span></span><span class="wordmark-name">Xiao Tu</span></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about" data-en="About" data-zh="关于">About</a>
-        <a href="#research" data-en="Research" data-zh="研究">Research</a>
-        <a href="#publications" data-en="Publications" data-zh="论文">Publications</a>
-        <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button class="language-button" id="language-button" type="button" aria-label="Switch to Chinese">中文</button>
-        <button class="theme-button" id="theme-button" type="button" aria-label="Switch to dark theme" title="Change theme"><span class="theme-icon" aria-hidden="true">◐</span></button>
-      </div>
-    </div>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="nav-link" href="#about">about</a>
+      <a class="nav-link" href="#publications">publications</a>
+      <a class="nav-link" href="#contact">contact</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Change color theme">◐</button>
+    </nav>
   </header>
 
-  <main id="main">
-    <section class="hero wrap" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span><span data-en="Ph.D. student · Zhejiang University" data-zh="浙江大学 · 博士研究生">Ph.D. student · Zhejiang University</span></p>
-        <h1 id="hero-title"><span data-en="Hello, I’m" data-zh="你好，我是">Hello, I’m</span><br><em data-en="Xiao Tu." data-zh="屠骁。">Xiao Tu.</em></h1>
-        <p class="hero-lede" data-en="I study diffusion language models and generative modeling, with a current focus on structured and constrained text generation." data-zh="我研究扩散语言模型与生成建模，目前聚焦于结构化、受约束的文本生成。">I study diffusion language models and generative modeling, with a current focus on structured and constrained text generation.</p>
-        <div class="hero-links">
-          <a class="primary-link" href="#research"><span data-en="Explore my research" data-zh="了解我的研究">Explore my research</span><span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="mailto:125311@zju.edu.cn"><span data-en="Get in touch" data-zh="联系我">Get in touch</span><span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="hero-art" role="img" aria-label="Abstract illustration of discrete points flowing into structured text lines">
-        <div class="art-grid"></div>
-        <div class="art-label art-label-top">DIFFUSION → LANGUAGE</div>
-        <svg viewBox="0 0 420 430" aria-hidden="true" focusable="false">
-          <defs>
-            <linearGradient id="flow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7b6de1"/><stop offset="1" stop-color="#d9a980"/></linearGradient>
-          </defs>
-          <g fill="none" stroke="#bdb8d6" stroke-width="1" opacity=".65">
-            <path d="M42 90 C160 110 130 280 350 313"/><path d="M42 142 C168 140 148 278 350 278"/><path d="M42 198 C170 168 158 263 350 242"/><path d="M42 254 C175 184 171 247 350 206"/><path d="M42 310 C170 205 205 227 350 171"/>
-          </g>
-          <g fill="#a39cc8"><circle cx="42" cy="90" r="5"/><circle cx="42" cy="142" r="5"/><circle cx="42" cy="198" r="5"/><circle cx="42" cy="254" r="5"/><circle cx="42" cy="310" r="5"/></g>
-          <g fill="url(#flow)"><circle cx="156" cy="145" r="4"/><circle cx="190" cy="209" r="4"/><circle cx="219" cy="264" r="4"/><circle cx="276" cy="212" r="4"/><circle cx="318" cy="186" r="4"/></g>
-          <g fill="#6b57c5"><rect x="350" y="163" width="26" height="7" rx="3.5"/><rect x="350" y="199" width="42" height="7" rx="3.5"/><rect x="350" y="235" width="32" height="7" rx="3.5"/><rect x="350" y="271" width="47" height="7" rx="3.5"/><rect x="350" y="307" width="36" height="7" rx="3.5"/></g>
-        </svg>
-        <div class="art-label art-label-bottom">01 / GENERATIVE SYSTEMS</div>
-      </div>
-    </section>
-
-    <div class="content wrap">
-      <section class="section intro" id="about" aria-labelledby="about-title">
-        <div class="section-side"><span class="section-number">01 /</span><span data-en="ABOUT" data-zh="关于">ABOUT</span></div>
-        <div class="section-main">
-          <h2 id="about-title" data-en="Curiosity as a starting point." data-zh="从好奇心出发。">Curiosity as a starting point.</h2>
-          <p data-en="I am a Ph.D. student in Information and Communication Engineering at Zhejiang University. My work connects diffusion and flow-based methods with language generation. I am especially interested in how generative systems can follow formal constraints while remaining flexible and useful." data-zh="我在浙江大学攻读信息与通信工程博士学位。我的研究将扩散与流模型方法用于语言生成，尤其关注生成系统如何遵循形式约束，同时保持灵活性与实用性。">I am a Ph.D. student in Information and Communication Engineering at Zhejiang University. My work connects diffusion and flow-based methods with language generation. I am especially interested in how generative systems can follow formal constraints while remaining flexible and useful.</p>
-          <p class="muted" data-en="Outside research, I enjoy photography, fitness, reading about people and ways of living, and romantic rock music. I like following my curiosity and sharing what I learn." data-zh="研究之外，我喜欢摄影、健身、阅读人文与生活方式话题，也喜欢浪漫摇滚。我乐于回应好奇心，并分享学到的东西。">Outside research, I enjoy photography, fitness, reading about people and ways of living, and romantic rock music. I like following my curiosity and sharing what I learn.</p>
-        </div>
+  <main class="wrap page" id="content">
+    <div class="main-column">
+      <section class="about" id="about" aria-labelledby="about-title">
+        <h1 id="about-title">About Me</h1>
+        <p>I am a Ph.D. student in Information and Communication Engineering at Zhejiang University. My research focuses on diffusion language models and generative modeling.</p>
+        <p>I currently study decoding order in discrete diffusion language models and structured output in continuous diffusion language models. Earlier, I explored reinforcement learning for diffusion- and flow-based action policies.</p>
+        <p>I received my B.Eng. in Communication Engineering from Beijing University of Posts and Telecommunications in 2025. I also have experience with diffusion and flow matching methods for inverse problems.</p>
       </section>
 
-      <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-side"><span class="section-number">02 /</span><span data-en="RESEARCH" data-zh="研究">RESEARCH</span></div>
-        <div class="section-main">
-          <div class="section-heading"><h2 id="research-title" data-en="What I’m working on" data-zh="我的研究方向">What I’m working on</h2><p data-en="From generative dynamics to controllable language." data-zh="从生成动力学走向可控的语言生成。">From generative dynamics to controllable language.</p></div>
-          <div class="research-grid">
-            <article class="research-card featured"><span class="card-index">01 — CURRENT</span><div class="card-glyph" aria-hidden="true">↗</div><h3 data-en="Diffusion language models" data-zh="扩散语言模型">Diffusion language models</h3><p data-en="Decoding order for discrete diffusion models, and structured output for continuous diffusion language models." data-zh="研究离散扩散模型的解码顺序，以及连续扩散语言模型的结构化输出。">Decoding order for discrete diffusion models, and structured output for continuous diffusion language models.</p><div class="card-tags"><span>Discrete diffusion</span><span>Structured generation</span></div></article>
-            <article class="research-card"><span class="card-index">02 — FOUNDATIONS</span><div class="card-glyph" aria-hidden="true">⌁</div><h3 data-en="Diffusion & flow matching" data-zh="扩散与流匹配">Diffusion & flow matching</h3><p data-en="Generative modeling with diffusion and flow matching, including inverse problems and their applications." data-zh="关注扩散与流匹配的生成建模，以及基于这些方法的逆问题求解及应用。">Generative modeling with diffusion and flow matching, including inverse problems and their applications.</p><div class="card-tags"><span>Diffusion</span><span>Flow matching</span></div></article>
-            <article class="research-card"><span class="card-index">03 — EARLIER WORK</span><div class="card-glyph" aria-hidden="true">◎</div><h3 data-en="Action policy optimization" data-zh="动作策略优化">Action policy optimization</h3><p data-en="Reinforcement learning for diffusion- and flow-based action policies, including online post-training of existing policies." data-zh="使用强化学习优化扩散与流生成的动作策略，并对已有策略进行在线后训练。">Reinforcement learning for diffusion- and flow-based action policies, including online post-training of existing policies.</p><div class="card-tags"><span>Reinforcement learning</span><span>2025–2026</span></div></article>
-          </div>
-        </div>
+      <section class="publications" id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+        <div class="year-divider"><span>2026</span></div>
+        <article class="publication">
+          <span class="venue">DiffuLM @ NeurIPS 2026 Workshop</span>
+          <h3>Steering Embedded Language Flows with Formal Constraints</h3>
+          <p class="paper-note">Formal constraint guidance for text generation in continuous embedding space. <span class="accepted">Accepted.</span></p>
+          <a class="paper-link" href="https://openreview.net/forum?id=NRzCFsG5br" target="_blank" rel="noopener noreferrer">OpenReview <span aria-hidden="true">↗</span></a>
+        </article>
       </section>
 
-      <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-side"><span class="section-number">03 /</span><span data-en="PUBLICATIONS" data-zh="论文">PUBLICATIONS</span></div>
-        <div class="section-main">
-          <div class="section-heading"><h2 id="publications-title" data-en="Selected publication" data-zh="代表论文">Selected publication</h2><p data-en="Formal constraints for continuous language generation." data-zh="面向连续语言生成的形式约束。">Formal constraints for continuous language generation.</p></div>
-          <article class="paper"><div class="paper-meta"><span class="year">2026</span><span class="status" data-en="Accepted · DiffuLM @ NeurIPS 2026 Workshop" data-zh="已接收 · DiffuLM @ NeurIPS 2026 Workshop">Accepted · DiffuLM @ NeurIPS 2026 Workshop</span></div><h3>Steering Embedded Language Flows with Formal Constraints</h3><p data-en="Introduces formal constraint guidance into Embedded Language Flows to steer the generation trajectory toward outputs that satisfy the required structure." data-zh="在 Embedded Language Flows 的生成过程中引入形式约束引导，调整生成轨迹，使输出满足指定结构。">Introduces formal constraint guidance into Embedded Language Flows to steer the generation trajectory toward outputs that satisfy the required structure.</p><a class="paper-link" href="https://openreview.net/forum?id=NRzCFsG5br" target="_blank" rel="noopener noreferrer"><span>OpenReview</span><span aria-hidden="true">↗</span></a></article>
-        </div>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <ul>
+          <li><span>Email:</span> <a href="mailto:125311@zju.edu.cn">125311@zju.edu.cn</a></li>
+          <li><span>GitHub:</span> <a href="https://github.com/jujuruo" target="_blank" rel="noopener noreferrer">jujuruo</a></li>
+        </ul>
       </section>
-
-      <section class="section" id="background" aria-labelledby="background-title">
-        <div class="section-side"><span class="section-number">04 /</span><span data-en="BACKGROUND" data-zh="背景">BACKGROUND</span></div>
-        <div class="section-main"><h2 id="background-title" data-en="Education & experience" data-zh="教育与经历">Education & experience</h2><div class="timeline">
-          <div class="timeline-row"><span class="timeline-date" data-en="2025 — present" data-zh="2025 — 至今">2025 — present</span><div><h3 data-en="Zhejiang University" data-zh="浙江大学">Zhejiang University</h3><p data-en="Ph.D. student, Information and Communication Engineering" data-zh="信息与通信工程 · 博士研究生">Ph.D. student, Information and Communication Engineering</p></div></div>
-          <div class="timeline-row"><span class="timeline-date">2021 — 2025</span><div><h3 data-en="Beijing University of Posts and Telecommunications" data-zh="北京邮电大学">Beijing University of Posts and Telecommunications</h3><p data-en="B.Eng. in Communication Engineering; minor in Smart Living at Ye Peida College. Ranked 24/481 (top 5%) by GPA across the first five semesters." data-zh="通信工程英才班本科；叶培大学院智慧生活辅修。前五学期 GPA 排名 24/481（前 5%）。">B.Eng. in Communication Engineering; minor in Smart Living at Ye Peida College. Ranked 24/481 (top 5%) by GPA across the first five semesters.</p></div></div>
-          <div class="timeline-row"><span class="timeline-date">2024</span><div><h3 data-en="vRobotit Laboratory" data-zh="vRobotit 实验室">vRobotit Laboratory</h3><p data-en="Internship project on image noise assessment: used semantic segmentation to analyze anomalous regions and reduce false positives on fine-grained image structure." data-zh="图像噪声评估实习项目：利用语义分割分析异常区域，减少细粒度图像结构造成的误判。">Internship project on image noise assessment: used semantic segmentation to analyze anomalous regions and reduce false positives on fine-grained image structure.</p></div></div>
-        </div><div class="recognition"><span class="recognition-label" data-en="RECOGNITION" data-zh="荣誉">RECOGNITION</span><p data-en="Beijing Outstanding Graduate (2025) · First Prize, Beijing College Physics Competition, non-physics division (2023) · BUPT–Cambridge joint training program (2024)" data-zh="北京市级优秀毕业生（2025）· 北京地区大学生物理竞赛非物理组一等奖（2023）· 北京邮电大学—剑桥大学拔尖创新人才联合培养项目（2024）">Beijing Outstanding Graduate (2025) · First Prize, Beijing College Physics Competition, non-physics division (2023) · BUPT–Cambridge joint training program (2024)</p></div></div>
-      </section>
-
-      <section class="section contact" id="contact" aria-labelledby="contact-title"><div class="section-side"><span class="section-number">05 /</span><span data-en="CONTACT" data-zh="联系">CONTACT</span></div><div class="section-main"><p class="contact-kicker" data-en="LET’S CONNECT" data-zh="保持联系">LET’S CONNECT</p><h2 id="contact-title" data-en="Have a question or an idea?" data-zh="有问题或想法？">Have a question or an idea?</h2><p data-en="I’m happy to discuss research, exchange ideas, and hear from people working on related questions." data-zh="欢迎交流研究、分享想法，也期待认识研究相关问题的朋友。">I’m happy to discuss research, exchange ideas, and hear from people working on related questions.</p><a class="contact-email" href="mailto:125311@zju.edu.cn">125311@zju.edu.cn <span aria-hidden="true">↗</span></a></div></section>
     </div>
+
+    <aside class="profile" aria-label="Profile">
+      <img class="portrait" src="portrait.jpg" alt="Portrait of Xiao Tu" width="1440" height="2008">
+      <h2>Xiao Tu</h2>
+      <p>Zhejiang University<br>Ph.D. Student<br>Hangzhou, China</p>
+    </aside>
   </main>
-  <footer class="site-footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> Xiao Tu</span><span data-en="Made with curiosity." data-zh="始于好奇心。">Made with curiosity.</span><a href="#top" data-en="Back to top ↑" data-zh="返回顶部 ↑">Back to top ↑</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="wrap">© <span id="year">2026</span> Xiao Tu. Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.</div>
+  </footer>
 </body>
 </html>
