@@ -4,3 +4,5 @@ html[data-theme="dark"]{color-scheme:dark;--bg:#191919;--text:#e8e8e8;--muted:#a
 @media(max-width:760px){.wrap{padding-left:20px;padding-right:20px}.page{grid-template-columns:minmax(0,1fr) 195px;gap:24px}.portrait{height:260px}.profile h2{font-size:23px}.about p{font-size:15px}}
 @media(max-width:570px){.site-header{height:54px}.nav{justify-content:center;gap:20px}.page{display:flex;flex-direction:column;padding-top:27px;padding-bottom:65px;gap:30px}.profile{order:-1;display:grid;grid-template-columns:118px 1fr;column-gap:18px;align-items:end;width:100%}.portrait{grid-row:1 / 3;width:118px;height:145px}.profile h2{align-self:end;margin:0 0 6px}.profile p{align-self:start;margin:0}.about p{font-size:15px}.publications{margin-top:58px}.year-divider{font-size:25px}.contact{margin-top:48px}h1,h2{font-size:26px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:570px){.nav{gap:16px}.nav-link{font-size:13px}}
+@media(max-width:380px){.nav{gap:9px}}
